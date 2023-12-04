@@ -1,8 +1,10 @@
+const configOptions = import.meta.env.VITE_FIREBASE_CONFIG.split("/");
+
 export const firebaseConfig = {
-  apiKey: "AIzaSyDBLgRxNIoyF0CHlVEj9LQnopVoUbhSObQ",
-  authDomain: "shoutouts-1eb50.firebaseapp.com",
-  projectId: "shoutouts-1eb50",
-  storageBucket: "shoutouts-1eb50.appspot.com",
-  messagingSenderId: "178597936222",
-  appId: "1:178597936222:web:94de96feedf92f5fff08cf",
+  apiKey: configOptions[0],
+  authDomain: configOptions[1],
+  projectId: configOptions[2],
+  storageBucket: configOptions[3],
+  messagingSenderId: configOptions[4],
+  appId: configOptions[5],
 };
