@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import "./Header.css";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { signInWithGoogle, signOut } from "../firebaseConfig";
+import { signInWithGoogle, signOut } from "../firebaseApp";
 import AuthContext from "../context/AuthContext";
 
 const Header = () => {

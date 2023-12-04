@@ -3,7 +3,7 @@ import "./AddSOForm.css";
 import Shoutout from "../models/Shoutout";
 import AuthContext from "../context/AuthContext";
 import { getDownloadURL, ref, uploadBytes } from "firebase/storage";
-import { storage } from "../firebaseConfig";
+import { storage } from "../firebaseApp";
 
 interface Props {
   onAdd: (so: Shoutout) => void;
